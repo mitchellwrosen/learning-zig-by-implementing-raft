@@ -14,6 +14,12 @@ pub fn main() !void {
     try stdout.print("Run `zig build test` to run the tests.\n", .{});
 
     try bw.flush(); // don't forget to flush!
+
+    const x: i32 = 5;
+    _ = x;
+
+    var y: i32 = 10;
+    y += 10;
 }
 
 test "simple test" {
